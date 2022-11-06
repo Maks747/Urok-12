@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+
+        String str = "I like Java!!!";
+
+        boolean got = str.contains("Java");
+        System.out.println("Подстрока содержит \"Java\" : " + got);
+
+        boolean start = str.startsWith("I like");
+        System.out.println("Подстрока начинается с \"I like\": " + start);
+
+        boolean ends = str.endsWith("!!!");
+        System.out.println("Подстрока заканчивается \"!!!\": " + ends);
+
+        if (got == true && start == true && ends == true) {
+            String result = str.toUpperCase();
+            System.out.println(result);
+            }
+
+        String rep = str.replace("a", "o");
+        String result = rep.substring(7, 11);
+        System.out.println(result);
+        }
+    }
